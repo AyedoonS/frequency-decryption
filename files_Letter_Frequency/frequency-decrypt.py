@@ -182,8 +182,6 @@ def str_to_dict_char_frequency(letters: str, text_str: str) -> dict[str, int]:
     Returns a dictionary with keys-value pairs of characters in <letters> and
     their occurrences in <text_str> respectively
     """
-    # TODO: Rework dict comprehension, maybe
-    # dictionary comprehension yay!1!1!!!11!1!!!1
     occurrences = {letter: 0 for letter in letters.lower()}
     for ch in text_str:
         # only accounts for characters already in the dict: If a character is
